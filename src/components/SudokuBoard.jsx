@@ -10,7 +10,6 @@ const SudokuBoard = () => {
       .map(() => Array(9).fill(0)),
   )
   const [invalidCells, setInvalidCells] = useState(new Set())
-  const [focusedCell, setFocusedCell] = useState(null)
   const [status, setStatus] = useState('Initializing...')
   const cellRefs = useRef([])
 
@@ -66,14 +65,6 @@ const SudokuBoard = () => {
     [board, handleCellChange, moveFocus],
   )
 
-  const handleCellFocus = useCallback((row, col) => {
-    setFocusedCell(`${row}-${col}`)
-  }, [])
-
-  const handleCellBlur = useCallback(() => {
-    setFocusedCell(null)
-  }, [])
-
   useEffect(() => {
     setInvalidCells(updateInvalidCells(board))
 
@@ -95,7 +86,7 @@ const SudokuBoard = () => {
 
   return (
     <div className="flex flex-col items-center justify-center w-full h-full">
-      <div className="grid grid-cols-9 grid-rows-9 gap-[1px] bg-black border-2 border-black w-[80vmin] h-[80vmin] max-w-full max-h-full">
+      <div className="grid grid-cols-9 grid-rows-9 gap-0 bg-black w-[80vmin] h-[80vmin] max-w-full max-h-full">
         {board.flatMap((row, rowIndex) =>
           row.map((value, colIndex) => (
             <Cell
@@ -104,10 +95,9 @@ const SudokuBoard = () => {
               value={value}
               onChange={(e) => handleCellChange(rowIndex, colIndex, e.target.value)}
               onKeyDown={(e) => handleKeyDown(e, rowIndex, colIndex)}
-              onFocus={() => handleCellFocus(rowIndex, colIndex)}
-              onBlur={handleCellBlur}
               isValid={!invalidCells.has(`${rowIndex}-${colIndex}`)}
-              isFocused={focusedCell === `${rowIndex}-${colIndex}`}
+              row={rowIndex}
+              col={colIndex}
             />
           )),
         )}
