@@ -1,3 +1,4 @@
+/* src/components/ThemeSwitcher.jsx */
 import { useTheme } from '../hooks/useTheme'
 
 const ThemeSwitcher = () => {

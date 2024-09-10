@@ -1,3 +1,4 @@
+/* eslint.config.js */
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
 import globals from 'globals'
 import js from '@eslint/js'

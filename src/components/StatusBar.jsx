@@ -1,3 +1,4 @@
+/* src/components/StatusBar.jsx */
 const LoadingDots = () => (
   <span className="loading-dots">
     <span className="dot">.</span>

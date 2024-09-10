@@ -1,3 +1,4 @@
+/* src/hooks/useTheme.js */
 import { useState, useEffect } from 'react'
 
 export const useTheme = () => {

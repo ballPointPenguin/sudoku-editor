@@ -1,3 +1,4 @@
+/* src/components/Cell.jsx */
 import { forwardRef } from 'react'
 
 const Cell = forwardRef(({ value, onChange, onKeyDown, isValid, row, col }, ref) => (

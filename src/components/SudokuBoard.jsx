@@ -1,3 +1,4 @@
+/* src/components/SudokuBoard.jsx */
 import { updateInvalidCells } from '../utils/sudokuUtils'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import Cell from './Cell'
