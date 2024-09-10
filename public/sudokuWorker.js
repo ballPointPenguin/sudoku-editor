@@ -35,6 +35,14 @@ function findEmpty(board) {
   return null
 }
 
+/**
+ * Counts the number of possible solutions for a given Sudoku board.
+ *
+ * @param {number[][]} board - A 2D array representing the Sudoku board, where 0 indicates an empty cell.
+ * @param {number} [maxSolutions=100_000] - The maximum number of solutions to count before stopping.
+ * @param {number} [timeLimit=2000] - The time limit in milliseconds to search for solutions.
+ * @returns {number|string} The number of solutions found, or a string indicating that the number of solutions exceeds the maximum limit.
+ */
 function countSolutions(board, maxSolutions = 100_000, timeLimit = 2000) {
   let solutions = 0
   const startTime = Date.now()
@@ -75,17 +83,3 @@ self.onmessage = function (e) {
   const solutions = countSolutions(board)
   self.postMessage(solutions)
 }
-
-// Usage:
-// const board = [
-//   [5,3,0,0,7,0,0,0,0],
-//   [6,0,0,1,9,5,0,0,0],
-//   [0,9,8,0,0,0,0,6,0],
-//   [8,0,0,0,6,0,0,0,3],
-//   [4,0,0,8,0,3,0,0,1],
-//   [7,0,0,0,2,0,0,0,6],
-//   [0,6,0,0,0,0,2,8,0],
-//   [0,0,0,4,1,9,0,0,5],
-//   [0,0,0,0,8,0,0,7,9]
-// ];
-// console.log(countSolutions(board));
