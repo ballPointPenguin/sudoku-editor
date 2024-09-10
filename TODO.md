@@ -1,0 +1,129 @@
+# TODO
+
+- [x] Type to overwrite
+- [x] space to clear
+- [x] Highlight conflicts
+- [x] highlight focus cell
+- [ ] Dark Mode
+- [ ] Corner digits (x4)
+- [ ] Center digits (1-9)
+- [ ] colors (x9) + neutrals (x3)
+- [ ] Colorblind Mode(s)
+- [ ] Undo (Ctrl/Cmd+Z)
+- [ ] Title
+- [ ] Author
+- [ ] Description
+- [ ] Notes
+- [ ] Rotate
+- [ ] Flip
+- [ ] Mirror
+- [ ] Reset
+- [ ] Randomize (with constraints)
+- [ ] a11y / aria
+- [ ] Export
+- [ ] Import
+- [ ] LongURL
+- [ ] ShortURL
+- [ ] Constraints:
+  - [ ] Diagonal +
+  - [ ] Diagonal -
+  - [ ] Anti-Knight
+  - [ ] Anti-King
+  - [ ] Disjoint Groups
+  - [ ] Nonconsecutive
+- [ ] Features:
+  - [ ] Given Digit (?)
+  - [ ] Regions
+- [ ] Constraint Tools:
+  - [ ] Extra Region
+  - [ ] Odd
+  - [ ] Even
+  - [ ] Thermometer
+  - [ ] Palindrome
+  - [ ] Killer Cage
+  - [ ] Litter Killer Sum
+  - [ ] Sandwich Sum
+  - [ ] Difference
+  - [ ] Ratio
+  - [ ] Ratio (negative constraint)
+  - [ ] Clone
+  - [ ] Arrow
+  - [ ] Between Line
+  - [ ] Minimum
+  - [ ] Maximum
+  - [ ] XV
+  - [ ] XV (negative constraint)
+  - [ ] Quadruple
+- [ ] Cosmetic Tools:
+  - [ ] Text:
+    - [ ] Placement (cell, border, corner, outside, auto)
+    - [ ] Size
+    - [ ] Angle
+    - [ ] Color
+  - [ ] Circle:
+    - [ ] Placement (cell, border, corner, outside, auto)
+    - [ ] Width
+    - [ ] Height
+    - [ ] Angle
+    - [ ] Colors (base, outline, text)
+  - [ ] Rectangle:
+    - [ ] Placement (cell, border, corner, outside, auto)
+    - [ ] Width
+    - [ ] Height
+    - [ ] Angle
+    - [ ] Colors (base, outline, text)
+  - [ ] Line:
+    - [ ] Width
+    - [ ] Color
+  - [ ] Cage:
+    - [ ] Colors (outline, text)
+- [ ] Language:
+  - [ ] English
+  - [ ] Chinese (simplified)
+  - [ ] Chinese (traditional)
+  - [ ] Spanish
+  - [ ] Arabic
+  - [ ] Hindi
+  - [ ] Portuguese
+  - [ ] Russian
+  - [ ] Japanese
+  - [ ] German
+  - [ ] French
+  - [ ] Korean
+  - [ ] Italian
+  - [ ] Turkish
+  - [ ] Persian (Farsi)
+  - [ ] Indonesian (Bahasa)
+  - [ ] Thai
+  - [ ] Vietnamese
+  - [ ] Polish
+  - [ ] Dutch
+  - [ ] Hebrew
+  - [ ] Ukrainian
+  - [ ] Bengali
+  - [ ] Romanian
+  - [ ] Swedish
+- [ ] Numerals:
+  - [ ] Arabic
+  - [ ] Roman
+  - [ ] Eastern Arabic
+  - [ ] Persian variant
+  - [ ] Devanagari
+  - [ ] Chinese
+  - [ ] Chinese (complex)
+  - [ ] Bengali
+  - [ ] Tamil
+  - [ ] Thai
+  - [ ] Burmese
+  - [ ] Khmer
+  - [ ] Lao
+  - [ ] Hebrew
+  - [ ] Georgian
+  - [ ] Greek
+  - [ ] Gujarati
+  - [ ] Sino-Korean
+  - [ ] Native Korean
+  - [ ] Kanji
+  - [ ] Mayan
+  - [ ] Binary
+  - [ ] Alphabet (A-I)
