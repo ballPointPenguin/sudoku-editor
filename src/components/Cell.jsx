@@ -4,7 +4,7 @@ const Cell = forwardRef(({ value, onChange, onKeyDown, isValid, row, col }, ref)
   <div
     className={`
       group
-      w-full h-full relative
+      w-full h-full aspect-square relative
       border-r border-b border-gray-300
       ${col % 3 === 2 ? 'border-r-2 border-r-black' : ''}
       ${row % 3 === 2 ? 'border-b-2 border-b-black' : ''}
@@ -14,6 +14,7 @@ const Cell = forwardRef(({ value, onChange, onKeyDown, isValid, row, col }, ref)
   >
     <input
       ref={ref}
+      aria-label={`Row ${row + 1}, Column ${col + 1}`}
       className={`
         w-full h-full
         flex justify-center items-center

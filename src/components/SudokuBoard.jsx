@@ -11,7 +11,10 @@ const SudokuBoard = () => {
   )
   const [invalidCells, setInvalidCells] = useState(new Set())
   const [status, setStatus] = useState('Initializing...')
+  const [isCalculating, setIsCalculating] = useState(false)
   const cellRefs = useRef([])
+  const workerRef = useRef(null)
+  const timerRef = useRef(null)
 
   const moveFocus = useCallback((row, col, dRow, dCol) => {
     const nextRow = row + dRow
@@ -66,27 +69,54 @@ const SudokuBoard = () => {
   )
 
   useEffect(() => {
-    setInvalidCells(updateInvalidCells(board))
+    // Initialize the worker
+    workerRef.current = new Worker('sudokuWorker.js')
 
-    const worker = new Worker('sudokuWorker.js')
-
-    worker.onmessage = (e) => {
+    // Set up the message and error handlers
+    workerRef.current.onmessage = (e) => {
       setStatus(`Number of solutions: ${e.data}`)
+      setIsCalculating(false)
     }
 
-    const timerId = setTimeout(() => {
-      worker.postMessage(board)
+    workerRef.current.onerror = (error) => {
+      console.error('Worker error:', error)
+      setStatus('Error calculating solutions')
+      setIsCalculating(false)
+    }
+
+    // Clean up the worker when the component unmounts
+    return () => {
+      if (workerRef.current) {
+        workerRef.current.terminate()
+      }
+    }
+  }, []) // Empty dependency array means this effect runs only once on mount
+
+  useEffect(() => {
+    setInvalidCells(updateInvalidCells(board))
+
+    // Clear the previous timer if it exists
+    if (timerRef.current) {
+      clearTimeout(timerRef.current)
+    }
+
+    // Set a new timer
+    timerRef.current = setTimeout(() => {
+      setIsCalculating(true)
+      workerRef.current.postMessage(board)
     }, 500)
 
+    // Clean up the timer when the board changes
     return () => {
-      clearTimeout(timerId)
-      worker.terminate()
+      if (timerRef.current) {
+        clearTimeout(timerRef.current)
+      }
     }
   }, [board])
 
   return (
-    <div className="flex flex-col items-center justify-center w-full h-full">
-      <div className="grid grid-cols-9 grid-rows-9 gap-0 bg-black w-[80vmin] h-[80vmin] max-w-full max-h-full">
+    <div className="flex flex-col items-center justify-center w-full h-full p-4 sm:p-8">
+      <div className="grid grid-cols-9 grid-rows-9 gap-0 bg-black w-full h-full max-w-[80vmin] max-h-[80vmin] aspect-square">
         {board.flatMap((row, rowIndex) =>
           row.map((value, colIndex) => (
             <Cell
@@ -102,7 +132,7 @@ const SudokuBoard = () => {
           )),
         )}
       </div>
-      <StatusBar status={status} />
+      <StatusBar status={status} isCalculating={isCalculating} />
     </div>
   )
 }

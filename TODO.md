@@ -18,12 +18,15 @@
 - [ ] Flip
 - [ ] Mirror
 - [ ] Reset
-- [ ] Randomize (with constraints)
 - [ ] a11y / aria
+- [ ] Unit Tests
+- [ ] Integration Tests
 - [ ] Export
 - [ ] Import
 - [ ] LongURL
 - [ ] ShortURL
+- [ ] E2E Tests
+- [ ] Randomize (with constraints)
 - [ ] Constraints:
   - [ ] Diagonal +
   - [ ] Diagonal -
