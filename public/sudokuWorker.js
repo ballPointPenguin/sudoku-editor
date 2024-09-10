@@ -1,6 +1,7 @@
 // Basic structure for Sudoku grid
 const EMPTY = 0
 const SIZE = 9
+const THEORETICAL_MAX = 6_670_903_752_021_072_936_960n
 
 function isValid(board, row, col, num) {
   // Check row
@@ -37,6 +38,11 @@ function findEmpty(board) {
 function countSolutions(board, maxSolutions = 100_000, timeLimit = 2000) {
   let solutions = 0
   const startTime = Date.now()
+
+  const isBlankBoard = board.every((row) => row.every((cell) => cell === 0))
+  if (isBlankBoard) {
+    return THEORETICAL_MAX
+  }
 
   function solve() {
     if (solutions >= maxSolutions || Date.now() - startTime > timeLimit) {
