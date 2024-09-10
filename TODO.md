@@ -5,14 +5,14 @@
 - [x] Highlight conflicts
 - [x] highlight focus cell
 - [x] Dark Mode / Light Mode switcher
+- [x] Title
+- [x] Author
+- [x] Description
 - [ ] Corner digits (x4)
 - [ ] Center digits (1-9)
 - [ ] colors (x9) + neutrals (x3)
 - [ ] Colorblind Mode(s)
 - [ ] Undo (Ctrl/Cmd+Z)
-- [ ] Title
-- [ ] Author
-- [ ] Description
 - [ ] Notes
 - [ ] Rotate
 - [ ] Flip
