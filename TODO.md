@@ -4,7 +4,7 @@
 - [x] space to clear
 - [x] Highlight conflicts
 - [x] highlight focus cell
-- [ ] Dark Mode
+- [x] Dark Mode / Light Mode switcher
 - [ ] Corner digits (x4)
 - [ ] Center digits (1-9)
 - [ ] colors (x9) + neutrals (x3)
@@ -27,6 +27,7 @@
 - [ ] ShortURL
 - [ ] E2E Tests
 - [ ] Randomize (with constraints)
+- [ ] Performance-aware worker values
 - [ ] Constraints:
   - [ ] Diagonal +
   - [ ] Diagonal -

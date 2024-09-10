@@ -1,14 +1,23 @@
 import SudokuBoard from './components/SudokuBoard'
+import ThemeSwitcher from './components/ThemeSwitcher'
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center w-full min-h-screen p-4 bg-gray-100">
-      <header className="mb-8">
-        <h1 className="text-4xl font-bold text-gray-800">Bennie&apos;s Board Builder</h1>
-      </header>
-      <main>
-        <SudokuBoard />
-      </main>
+    <div className="min-h-screen text-gray-900 transition-colors duration-300 bg-white dark:bg-gray-800 dark:text-gray-100">
+      <div className="container px-4 py-8 mx-auto">
+        <header className="flex items-center justify-between p-4 mb-8 sm:p-8">
+          <span className="basis-1/4"></span>
+          <h1 className="mx-auto text-3xl font-bold text-center basis-1/2">
+            Bennie&apos;s Board Builder
+          </h1>
+          <div className="text-right basis-1/4">
+            <ThemeSwitcher />
+          </div>
+        </header>
+        <main>
+          <SudokuBoard />
+        </main>
+      </div>
     </div>
   )
 }

@@ -116,7 +116,7 @@ const SudokuBoard = () => {
 
   return (
     <div className="flex flex-col items-center justify-center w-full h-full p-4 sm:p-8">
-      <div className="grid grid-cols-9 grid-rows-9 gap-0 bg-black w-full h-full max-w-[80vmin] max-h-[80vmin] aspect-square">
+      <div className="grid grid-cols-9 grid-rows-9 gap-0 w-full h-full max-w-[80vmin] max-h-[80vmin] aspect-square">
         {board.flatMap((row, rowIndex) =>
           row.map((value, colIndex) => (
             <Cell
