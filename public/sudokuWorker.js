@@ -1,3 +1,4 @@
+/* public/sudokuWorker.js */
 // Basic structure for Sudoku grid
 const EMPTY = 0
 const SIZE = 9

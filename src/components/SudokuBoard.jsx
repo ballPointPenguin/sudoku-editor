@@ -2,6 +2,7 @@
 import { updateInvalidCells } from '../utils/sudokuUtils'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import Cell from './Cell'
+import ColorPicker from './ColorPicker'
 import StatusBar from './StatusBar'
 
 const SudokuBoard = () => {
@@ -10,9 +11,16 @@ const SudokuBoard = () => {
       .fill()
       .map(() => Array(9).fill(0)),
   )
+  const [cellColors, setCellColors] = useState(
+    Array(9)
+      .fill()
+      .map(() => Array(9).fill('white')),
+  )
   const [invalidCells, setInvalidCells] = useState(new Set())
   const [status, setStatus] = useState('Initializing...')
   const [isCalculating, setIsCalculating] = useState(false)
+  const [selectedColor, setSelectedColor] = useState('white')
+  const [isColoring, setIsColoring] = useState(false)
   const cellRefs = useRef([])
   const workerRef = useRef(null)
   const timerRef = useRef(null)
@@ -35,6 +43,36 @@ const SudokuBoard = () => {
     },
     [board],
   )
+
+  const handleCellColor = useCallback(
+    (row, col) => {
+      const newCellColors = cellColors.map((r) => [...r])
+      newCellColors[row][col] = selectedColor
+      setCellColors(newCellColors)
+    },
+    [cellColors, selectedColor],
+  )
+
+  const handlePointerDown = useCallback(
+    (row, col) => {
+      setIsColoring(true)
+      handleCellColor(row, col)
+    },
+    [handleCellColor],
+  )
+
+  const handlePointerEnter = useCallback(
+    (row, col) => {
+      if (isColoring) {
+        handleCellColor(row, col)
+      }
+    },
+    [isColoring, handleCellColor],
+  )
+
+  const handlePointerUp = useCallback(() => {
+    setIsColoring(false)
+  }, [])
 
   const handleKeyDown = useCallback(
     (event, row, col) => {
@@ -115,20 +153,38 @@ const SudokuBoard = () => {
     }
   }, [board])
 
+  useEffect(() => {
+    const handleGlobalPointerUp = () => setIsColoring(false)
+    window.addEventListener('pointerup', handleGlobalPointerUp)
+    window.addEventListener('pointercancel', handleGlobalPointerUp)
+    return () => {
+      window.removeEventListener('pointerup', handleGlobalPointerUp)
+      window.removeEventListener('pointercancel', handleGlobalPointerUp)
+    }
+  }, [])
+
   return (
     <div className="flex flex-col items-center justify-center w-full h-full p-4 sm:p-8">
-      <div className="grid grid-cols-9 grid-rows-9 gap-0 w-full h-full max-w-[80vmin] max-h-[80vmin] aspect-square">
+      <ColorPicker selectedColor={selectedColor} onColorSelect={setSelectedColor} />
+      <div
+        className="grid grid-cols-9 grid-rows-9 gap-0 w-full h-full max-w-[80vmin] max-h-[80vmin] aspect-square"
+        onPointerUp={handlePointerUp}
+        onPointerCancel={handlePointerUp}
+      >
         {board.flatMap((row, rowIndex) =>
           row.map((value, colIndex) => (
             <Cell
               key={`${rowIndex}-${colIndex}`}
               ref={(el) => (cellRefs.current[rowIndex * 9 + colIndex] = el)}
-              value={value}
-              onChange={(e) => handleCellChange(rowIndex, colIndex, e.target.value)}
-              onKeyDown={(e) => handleKeyDown(e, rowIndex, colIndex)}
-              isValid={!invalidCells.has(`${rowIndex}-${colIndex}`)}
               row={rowIndex}
               col={colIndex}
+              value={value}
+              color={cellColors[rowIndex][colIndex]}
+              isValid={!invalidCells.has(`${rowIndex}-${colIndex}`)}
+              onChange={(e) => handleCellChange(rowIndex, colIndex, e.target.value)}
+              onKeyDown={(e) => handleKeyDown(e, rowIndex, colIndex)}
+              onPointerDown={() => handlePointerDown(rowIndex, colIndex)}
+              onPointerEnter={() => handlePointerEnter(rowIndex, colIndex)}
             />
           )),
         )}

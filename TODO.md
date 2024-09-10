@@ -8,9 +8,9 @@
 - [x] Title
 - [x] Author
 - [x] Description
+- [x] colors (x9) + neutrals (x3)
 - [ ] Corner digits (x4)
 - [ ] Center digits (1-9)
-- [ ] colors (x9) + neutrals (x3)
 - [ ] Colorblind Mode(s)
 - [ ] Undo (Ctrl/Cmd+Z)
 - [ ] Notes
