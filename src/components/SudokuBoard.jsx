@@ -1,5 +1,5 @@
 /* src/components/SudokuBoard.jsx */
-import { updateInvalidCells } from '../utils/sudokuUtils'
+import { addCornerDigit, addCenterDigit, updateInvalidCells } from '../utils/sudokuUtils'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import Cell from './Cell'
 import ColorPicker from './ColorPicker'
@@ -9,21 +9,25 @@ const SudokuBoard = () => {
   const [board, setBoard] = useState(
     Array(9)
       .fill()
-      .map(() => Array(9).fill(0)),
+      .map(() =>
+        Array(9).fill({
+          value: 0,
+          color: 'white',
+          cornerDigits: [],
+          centerDigits: [],
+        }),
+      ),
   )
-  const [cellColors, setCellColors] = useState(
-    Array(9)
-      .fill()
-      .map(() => Array(9).fill('white')),
-  )
+
   const [invalidCells, setInvalidCells] = useState(new Set())
-  const [status, setStatus] = useState('Initializing...')
   const [isCalculating, setIsCalculating] = useState(false)
-  const [selectedColor, setSelectedColor] = useState('white')
   const [isColoring, setIsColoring] = useState(false)
+  const [mode, setMode] = useState('normal') // 'normal' or 'corner' or 'center'
+  const [selectedColor, setSelectedColor] = useState('white')
+  const [status, setStatus] = useState('Initializing...')
   const cellRefs = useRef([])
-  const workerRef = useRef(null)
   const timerRef = useRef(null)
+  const workerRef = useRef(null)
 
   const moveFocus = useCallback((row, col, dRow, dCol) => {
     const nextRow = row + dRow
@@ -36,8 +40,12 @@ const SudokuBoard = () => {
   const handleCellChange = useCallback(
     (row, col, value) => {
       if (value === '' || (parseInt(value) >= 1 && parseInt(value) <= 9)) {
-        const newBoard = board.map((r) => [...r])
-        newBoard[row][col] = value === '' ? 0 : parseInt(value)
+        const newBoard = board.map((r) => r.map((c) => ({ ...c })))
+        newBoard[row][col].value = value === '' ? 0 : parseInt(value)
+        if (newBoard[row][col].value !== 0) {
+          newBoard[row][col].cornerDigits = []
+          newBoard[row][col].centerDigits = []
+        }
         setBoard(newBoard)
       }
     },
@@ -46,11 +54,11 @@ const SudokuBoard = () => {
 
   const handleCellColor = useCallback(
     (row, col) => {
-      const newCellColors = cellColors.map((r) => [...r])
-      newCellColors[row][col] = selectedColor
-      setCellColors(newCellColors)
+      const newBoard = board.map((r) => r.map((c) => ({ ...c })))
+      newBoard[row][col].color = selectedColor
+      setBoard(newBoard)
     },
-    [cellColors, selectedColor],
+    [board, selectedColor],
   )
 
   const handlePointerDown = useCallback(
@@ -87,24 +95,57 @@ const SudokuBoard = () => {
         event.preventDefault()
         const [dRow, dCol] = keyActions[event.key]
         moveFocus(row, col, dRow, dCol)
-      } else if (event.key === ' ') {
+      }
+
+      if (event.key === ' ') {
         event.preventDefault()
         handleCellChange(row, col, '')
         moveFocus(row, col, 0, 1)
-      } else if (event.key >= '1' && event.key <= '9') {
+      }
+
+      if (event.key >= '1' && event.key <= '9') {
         event.preventDefault()
-        handleCellChange(row, col, event.key)
-        moveFocus(row, col, 0, 1)
-      } else if (event.key === 'Backspace' || event.key === 'Delete') {
+        if (mode === 'normal') {
+          handleCellChange(row, col, event.key)
+          moveFocus(row, col, 0, 1)
+        }
+
+        if (mode === 'corner') {
+          const newBoard = addCornerDigit(board, row, col, parseInt(event.key))
+          setBoard(newBoard)
+        }
+
+        if (mode === 'center') {
+          const newBoard = addCenterDigit(board, row, col, parseInt(event.key))
+          setBoard(newBoard)
+        }
+      }
+
+      if (event.key === 'Backspace' || event.key === 'Delete') {
         event.preventDefault()
-        if (board[row][col] === 0) {
-          moveFocus(row, col, 0, -1)
-        } else {
-          handleCellChange(row, col, '')
+
+        if (mode === 'normal') {
+          if (board[row][col].value === 0) {
+            moveFocus(row, col, 0, -1)
+          } else {
+            handleCellChange(row, col, '')
+          }
+        }
+
+        if (mode === 'corner') {
+          const newBoard = board.map((r) => r.map((c) => ({ ...c })))
+          newBoard[row][col].cornerDigits = []
+          setBoard(newBoard)
+        }
+
+        if (mode === 'center') {
+          const newBoard = board.map((r) => r.map((c) => ({ ...c })))
+          newBoard[row][col].centerDigits = []
+          setBoard(newBoard)
         }
       }
     },
-    [board, handleCellChange, moveFocus],
+    [board, mode, handleCellChange, moveFocus],
   )
 
   useEffect(() => {
@@ -172,14 +213,13 @@ const SudokuBoard = () => {
         onPointerCancel={handlePointerUp}
       >
         {board.flatMap((row, rowIndex) =>
-          row.map((value, colIndex) => (
+          row.map((cellData, colIndex) => (
             <Cell
               key={`${rowIndex}-${colIndex}`}
               ref={(el) => (cellRefs.current[rowIndex * 9 + colIndex] = el)}
               row={rowIndex}
               col={colIndex}
-              value={value}
-              color={cellColors[rowIndex][colIndex]}
+              cellData={cellData}
               isValid={!invalidCells.has(`${rowIndex}-${colIndex}`)}
               onChange={(e) => handleCellChange(rowIndex, colIndex, e.target.value)}
               onKeyDown={(e) => handleKeyDown(e, rowIndex, colIndex)}
@@ -190,6 +230,38 @@ const SudokuBoard = () => {
         )}
       </div>
       <StatusBar status={status} isCalculating={isCalculating} />
+      <div className="flex mt-4 space-x-2">
+        <button
+          className={`px-4 py-2 rounded ${
+            mode === 'normal'
+              ? 'bg-blue-500 text-white dark:bg-blue-800'
+              : 'bg-gray-200 dark:bg-gray-700'
+          }`}
+          onClick={() => setMode('normal')}
+        >
+          Normal
+        </button>
+        <button
+          className={`px-4 py-2 rounded ${
+            mode === 'corner'
+              ? 'bg-blue-500 text-white dark:bg-blue-800'
+              : 'bg-gray-200 dark:bg-gray-700'
+          }`}
+          onClick={() => setMode('corner')}
+        >
+          Corner
+        </button>
+        <button
+          className={`px-4 py-2 rounded ${
+            mode === 'center'
+              ? 'bg-blue-500 text-white dark:bg-blue-800'
+              : 'bg-gray-200 dark:bg-gray-700'
+          }`}
+          onClick={() => setMode('center')}
+        >
+          Center
+        </button>
+      </div>
     </div>
   )
 }
