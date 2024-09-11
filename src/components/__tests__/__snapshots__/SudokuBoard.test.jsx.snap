@@ -1,0 +1,4869 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SudokuBoard > matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex flex-col items-center justify-center w-full h-full p-4 sm:p-8"
+  >
+    <div
+      class="flex flex-wrap gap-2 p-2 bg-gray-100 rounded-lg dark:bg-gray-900"
+    >
+      <button
+        aria-label="Select red color"
+        class="w-8 h-8 rounded-full bg-red-500 dark:bg-red-700 "
+      />
+      <button
+        aria-label="Select orange color"
+        class="w-8 h-8 rounded-full bg-orange-500 dark:bg-orange-700 "
+      />
+      <button
+        aria-label="Select yellow color"
+        class="w-8 h-8 rounded-full bg-yellow-500 dark:bg-yellow-600 "
+      />
+      <button
+        aria-label="Select green color"
+        class="w-8 h-8 rounded-full bg-green-500 dark:bg-green-700 "
+      />
+      <button
+        aria-label="Select teal color"
+        class="w-8 h-8 rounded-full bg-teal-500 dark:bg-teal-700 "
+      />
+      <button
+        aria-label="Select blue color"
+        class="w-8 h-8 rounded-full bg-blue-500 dark:bg-blue-700 "
+      />
+      <button
+        aria-label="Select indigo color"
+        class="w-8 h-8 rounded-full bg-indigo-500 dark:bg-indigo-700 "
+      />
+      <button
+        aria-label="Select purple color"
+        class="w-8 h-8 rounded-full bg-purple-500 dark:bg-purple-700 "
+      />
+      <button
+        aria-label="Select pink color"
+        class="w-8 h-8 rounded-full bg-pink-500 dark:bg-pink-700 "
+      />
+      <button
+        aria-label="Select white color"
+        class="w-8 h-8 rounded-full bg-white dark:bg-gray-800 ring-2 ring-blue-500"
+      />
+      <button
+        aria-label="Select gray color"
+        class="w-8 h-8 rounded-full bg-gray-400 dark:bg-gray-600 "
+      />
+      <button
+        aria-label="Select black color"
+        class="w-8 h-8 rounded-full bg-gray-800 dark:bg-white "
+      />
+    </div>
+    <div
+      class="grid grid-cols-9 grid-rows-9 gap-0 w-full h-full max-w-[80vmin] max-h-[80vmin] aspect-square"
+    >
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          border-l-2 border-l-black dark:border-l-white
+          border-t-2 border-t-black dark:border-t-white
+        "
+      >
+        <input
+          aria-label="Row 1, Column 1"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          border-t-2 border-t-black dark:border-t-white
+        "
+      >
+        <input
+          aria-label="Row 1, Column 2"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          
+          
+          border-t-2 border-t-black dark:border-t-white
+        "
+      >
+        <input
+          aria-label="Row 1, Column 3"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          border-t-2 border-t-black dark:border-t-white
+        "
+      >
+        <input
+          aria-label="Row 1, Column 4"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          border-t-2 border-t-black dark:border-t-white
+        "
+      >
+        <input
+          aria-label="Row 1, Column 5"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          
+          
+          border-t-2 border-t-black dark:border-t-white
+        "
+      >
+        <input
+          aria-label="Row 1, Column 6"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          border-t-2 border-t-black dark:border-t-white
+        "
+      >
+        <input
+          aria-label="Row 1, Column 7"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          border-t-2 border-t-black dark:border-t-white
+        "
+      >
+        <input
+          aria-label="Row 1, Column 8"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          
+          
+          border-t-2 border-t-black dark:border-t-white
+        "
+      >
+        <input
+          aria-label="Row 1, Column 9"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          border-l-2 border-l-black dark:border-l-white
+          
+        "
+      >
+        <input
+          aria-label="Row 2, Column 1"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 2, Column 2"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 2, Column 3"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 2, Column 4"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 2, Column 5"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 2, Column 6"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 2, Column 7"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 2, Column 8"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 2, Column 9"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          border-b-2 border-b-black dark:border-b-white
+          border-l-2 border-l-black dark:border-l-white
+          
+        "
+      >
+        <input
+          aria-label="Row 3, Column 1"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 3, Column 2"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 3, Column 3"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 3, Column 4"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 3, Column 5"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 3, Column 6"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 3, Column 7"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 3, Column 8"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 3, Column 9"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          border-l-2 border-l-black dark:border-l-white
+          
+        "
+      >
+        <input
+          aria-label="Row 4, Column 1"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 4, Column 2"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 4, Column 3"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 4, Column 4"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 4, Column 5"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 4, Column 6"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 4, Column 7"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 4, Column 8"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 4, Column 9"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          border-l-2 border-l-black dark:border-l-white
+          
+        "
+      >
+        <input
+          aria-label="Row 5, Column 1"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 5, Column 2"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 5, Column 3"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 5, Column 4"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 5, Column 5"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 5, Column 6"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 5, Column 7"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 5, Column 8"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 5, Column 9"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          border-b-2 border-b-black dark:border-b-white
+          border-l-2 border-l-black dark:border-l-white
+          
+        "
+      >
+        <input
+          aria-label="Row 6, Column 1"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 6, Column 2"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 6, Column 3"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 6, Column 4"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 6, Column 5"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 6, Column 6"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 6, Column 7"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 6, Column 8"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 6, Column 9"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          border-l-2 border-l-black dark:border-l-white
+          
+        "
+      >
+        <input
+          aria-label="Row 7, Column 1"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 7, Column 2"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 7, Column 3"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 7, Column 4"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 7, Column 5"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 7, Column 6"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 7, Column 7"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 7, Column 8"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 7, Column 9"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          border-l-2 border-l-black dark:border-l-white
+          
+        "
+      >
+        <input
+          aria-label="Row 8, Column 1"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 8, Column 2"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 8, Column 3"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 8, Column 4"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 8, Column 5"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 8, Column 6"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 8, Column 7"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 8, Column 8"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 8, Column 9"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          border-b-2 border-b-black dark:border-b-white
+          border-l-2 border-l-black dark:border-l-white
+          
+        "
+      >
+        <input
+          aria-label="Row 9, Column 1"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 9, Column 2"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 9, Column 3"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 9, Column 4"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 9, Column 5"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 9, Column 6"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 9, Column 7"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 9, Column 8"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          border-r-2 border-r-black dark:border-r-white
+          border-b-2 border-b-black dark:border-b-white
+          
+          
+        "
+      >
+        <input
+          aria-label="Row 9, Column 9"
+          class="
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            bg-white dark:bg-gray-800
+            
+            text-gray-800 dark:text-white
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          "
+          maxlength="1"
+          value=""
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-between text-[2vmin] pointer-events-none"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class="pl-[0.5vmin]"
+            />
+            <span
+              class="pr-[0.5vmin]"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+        >
+          <span
+            class="text-center"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class=" flex justify-center items-center mt-5 text-lg h-10 w-full max-w-[80vmin]  bg-gray-100 dark:bg-gray-900 rounded-md px-2.5 "
+    >
+      Initializing...
+    </div>
+    <div
+      class="flex mt-4 space-x-2"
+    >
+      <button
+        class="px-4 py-2 rounded bg-blue-500 text-white dark:bg-blue-800"
+      >
+        Normal
+      </button>
+      <button
+        class="px-4 py-2 rounded bg-gray-200 dark:bg-gray-700"
+      >
+        Corner
+      </button>
+      <button
+        class="px-4 py-2 rounded bg-gray-200 dark:bg-gray-700"
+      >
+        Center
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

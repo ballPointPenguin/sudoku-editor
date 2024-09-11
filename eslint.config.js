@@ -14,7 +14,11 @@ export default [
     ...jsxA11y.flatConfigs.recommended,
     languageOptions: {
       ecmaVersion: 2020,
-      globals: globals.browser,
+      globals: {
+        ...globals.browser,
+        ...globals.es2020,
+        ...globals.node,
+      },
       parserOptions: {
         ecmaVersion: 'latest',
         ecmaFeatures: { jsx: true },
@@ -37,6 +41,20 @@ export default [
       'react/jsx-no-target-blank': 'off',
       'react/prop-types': 'off',
       'react/react-in-jsx-scope': 'off',
+    },
+  },
+  {
+    files: ['**/*.test.{js,jsx}', '**/__tests__/**/*.{js,jsx}'],
+    languageOptions: {
+      globals: {
+        describe: true,
+        expect: true,
+        test: true,
+        vi: true,
+      },
+    },
+    rules: {
+      // Add any specific rules for test files
     },
   },
   eslintPluginPrettierRecommended,
