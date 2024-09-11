@@ -1,4 +1,4 @@
-/* src/models/Cell.js */
+// src/models/Cell.js
 export class Cell {
   constructor(value = 0, color = 'white', cornerDigits = [], centerDigits = []) {
     this.value = value

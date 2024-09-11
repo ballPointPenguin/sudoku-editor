@@ -1,4 +1,4 @@
-/* src/utils/sudokuUtils.js */
+// src/utils/sudokuUtils.js
 export const addCornerDigit = (board, row, col, digit) => {
   const newBoard = board.map((r) => r.map((c) => ({ ...c })))
   const cell = newBoard[row][col]

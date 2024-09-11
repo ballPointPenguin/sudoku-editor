@@ -1,4 +1,4 @@
-/* src/models/Board.js */
+// src/models/Board.js
 import { Cell } from './Cell'
 
 export class Board {

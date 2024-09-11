@@ -1,4 +1,4 @@
-/* src/components/SudokuBoard.jsx */
+// src/components/SudokuBoard.jsx
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { Board } from '../models/Board'
 import BoardComponent from './Board'

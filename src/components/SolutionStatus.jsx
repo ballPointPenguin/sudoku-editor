@@ -1,4 +1,4 @@
-/* src/components/SolutionStatus.jsx */
+// src/components/SolutionStatus.jsx
 import React from 'react'
 import StatusBar from './StatusBar'
 

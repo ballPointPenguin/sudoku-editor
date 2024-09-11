@@ -1,4 +1,4 @@
-/* src/App.jsx */
+// src/App.jsx
 import { useState } from 'react'
 import SudokuBoard from './components/SudokuBoard'
 import SudokuMetadata from './components/SudokuMetadata'

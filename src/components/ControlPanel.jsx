@@ -1,4 +1,4 @@
-/* src/components/ControlPanel.jsx */
+// src/components/ControlPanel.jsx
 import React from 'react'
 
 const ControlPanel = ({ mode, setMode }) => {

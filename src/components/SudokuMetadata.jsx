@@ -1,4 +1,4 @@
-/* src/components/SudokuMetadata.jsx */
+// src/components/SudokuMetadata.jsx
 const SudokuMetadata = ({
   title,
   author,
