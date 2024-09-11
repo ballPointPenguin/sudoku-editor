@@ -14,7 +14,7 @@
 - [ ] Claude Improvements:
   - [x] Refactor SudokuBoard.jsx into smaller components.
   - [ ] Implement basic integration tests for core functionality.
-  - [ ] Create Cell and Board classes to encapsulate data and logic.
+  - [x] Create Cell and Board classes to encapsulate data and logic.
   - [x] Set up ESLint and Prettier for code consistency.
   - [ ] Add unit tests for utility functions and new classes.
 - [ ] Colorblind Mode(s)

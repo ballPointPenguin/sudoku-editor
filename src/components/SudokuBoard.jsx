@@ -1,25 +1,13 @@
 /* src/components/SudokuBoard.jsx */
-import { addCornerDigit, addCenterDigit, updateInvalidCells } from '../utils/sudokuUtils'
 import { useCallback, useEffect, useRef, useState } from 'react'
-import Board from './Board'
+import { Board } from '../models/Board'
+import BoardComponent from './Board'
 import ColorPicker from './ColorPicker'
 import ControlPanel from './ControlPanel'
 import SolutionStatus from './SolutionStatus'
 
 const SudokuBoard = () => {
-  const [board, setBoard] = useState(
-    Array(9)
-      .fill()
-      .map(() =>
-        Array(9).fill({
-          value: 0,
-          color: 'white',
-          cornerDigits: [],
-          centerDigits: [],
-        }),
-      ),
-  )
-
+  const [board, setBoard] = useState(new Board())
   const [invalidCells, setInvalidCells] = useState(new Set())
   const [isCalculating, setIsCalculating] = useState(false)
   const [isColoring, setIsColoring] = useState(false)
@@ -41,12 +29,8 @@ const SudokuBoard = () => {
   const handleCellChange = useCallback(
     (row, col, value) => {
       if (value === '' || (parseInt(value) >= 1 && parseInt(value) <= 9)) {
-        const newBoard = board.map((r) => r.map((c) => ({ ...c })))
-        newBoard[row][col].value = value === '' ? 0 : parseInt(value)
-        if (newBoard[row][col].value !== 0) {
-          newBoard[row][col].cornerDigits = []
-          newBoard[row][col].centerDigits = []
-        }
+        const newBoard = board.clone()
+        newBoard.setCellValue(row, col, value === '' ? 0 : parseInt(value))
         setBoard(newBoard)
       }
     },
@@ -55,8 +39,8 @@ const SudokuBoard = () => {
 
   const handleCellColor = useCallback(
     (row, col) => {
-      const newBoard = board.map((r) => r.map((c) => ({ ...c })))
-      newBoard[row][col].color = selectedColor
+      const newBoard = board.clone()
+      newBoard.setCellColor(row, col, selectedColor)
       setBoard(newBoard)
     },
     [board, selectedColor],
@@ -106,42 +90,32 @@ const SudokuBoard = () => {
 
       if (event.key >= '1' && event.key <= '9') {
         event.preventDefault()
+        const newBoard = board.clone()
         if (mode === 'normal') {
-          handleCellChange(row, col, event.key)
-          moveFocus(row, col, 0, 1)
-        }
-
-        if (mode === 'corner') {
-          const newBoard = addCornerDigit(board, row, col, parseInt(event.key))
+          newBoard.setCellValue(row, col, parseInt(event.key))
           setBoard(newBoard)
-        }
-
-        if (mode === 'center') {
-          const newBoard = addCenterDigit(board, row, col, parseInt(event.key))
+          moveFocus(row, col, 0, 1)
+        } else if (mode === 'corner') {
+          newBoard.toggleCornerDigit(row, col, parseInt(event.key))
+          setBoard(newBoard)
+        } else if (mode === 'center') {
+          newBoard.toggleCenterDigit(row, col, parseInt(event.key))
           setBoard(newBoard)
         }
       }
 
       if (event.key === 'Backspace' || event.key === 'Delete') {
         event.preventDefault()
-
+        const newBoard = board.clone()
         if (mode === 'normal') {
-          if (board[row][col].value === 0) {
+          if (board.getCell(row, col).value === 0) {
             moveFocus(row, col, 0, -1)
           } else {
-            handleCellChange(row, col, '')
+            newBoard.setCellValue(row, col, 0)
+            setBoard(newBoard)
           }
-        }
-
-        if (mode === 'corner') {
-          const newBoard = board.map((r) => r.map((c) => ({ ...c })))
-          newBoard[row][col].cornerDigits = []
-          setBoard(newBoard)
-        }
-
-        if (mode === 'center') {
-          const newBoard = board.map((r) => r.map((c) => ({ ...c })))
-          newBoard[row][col].centerDigits = []
+        } else {
+          newBoard.clearCellDigits(row, col)
           setBoard(newBoard)
         }
       }
@@ -174,7 +148,7 @@ const SudokuBoard = () => {
   }, []) // Empty dependency array means this effect runs only once on mount
 
   useEffect(() => {
-    setInvalidCells(updateInvalidCells(board))
+    setInvalidCells(board.findInvalidCells())
 
     // Clear the previous timer if it exists
     if (timerRef.current) {
@@ -184,7 +158,7 @@ const SudokuBoard = () => {
     // Set a new timer
     timerRef.current = setTimeout(() => {
       setIsCalculating(true)
-      workerRef.current.postMessage(board)
+      workerRef.current.postMessage(board.toJSON())
     }, 500)
 
     // Clean up the timer when the board changes
@@ -208,7 +182,7 @@ const SudokuBoard = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full h-full p-4 sm:p-8">
       <ColorPicker selectedColor={selectedColor} onColorSelect={setSelectedColor} />
-      <Board
+      <BoardComponent
         board={board}
         invalidCells={invalidCells}
         cellRefs={cellRefs}
