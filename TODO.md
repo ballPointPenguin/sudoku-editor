@@ -9,8 +9,14 @@
 - [x] Author
 - [x] Description
 - [x] colors (x9) + neutrals (x3)
-- [ ] Corner digits (x4)
-- [ ] Center digits (1-9)
+- [x] Corner digits (x4)
+- [x] Center digits (1-9)
+- [ ] Claude Improvements:
+  - [x] Refactor SudokuBoard.jsx into smaller components.
+  - [ ] Implement basic integration tests for core functionality.
+  - [ ] Create Cell and Board classes to encapsulate data and logic.
+  - [x] Set up ESLint and Prettier for code consistency.
+  - [ ] Add unit tests for utility functions and new classes.
 - [ ] Colorblind Mode(s)
 - [ ] Undo (Ctrl/Cmd+Z)
 - [ ] Notes

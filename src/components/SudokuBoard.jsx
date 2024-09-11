@@ -1,9 +1,10 @@
 /* src/components/SudokuBoard.jsx */
 import { addCornerDigit, addCenterDigit, updateInvalidCells } from '../utils/sudokuUtils'
 import { useCallback, useEffect, useRef, useState } from 'react'
-import Cell from './Cell'
+import Board from './Board'
 import ColorPicker from './ColorPicker'
-import StatusBar from './StatusBar'
+import ControlPanel from './ControlPanel'
+import SolutionStatus from './SolutionStatus'
 
 const SudokuBoard = () => {
   const [board, setBoard] = useState(
@@ -207,61 +208,18 @@ const SudokuBoard = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full h-full p-4 sm:p-8">
       <ColorPicker selectedColor={selectedColor} onColorSelect={setSelectedColor} />
-      <div
-        className="grid grid-cols-9 grid-rows-9 gap-0 w-full h-full max-w-[80vmin] max-h-[80vmin] aspect-square"
-        onPointerUp={handlePointerUp}
-        onPointerCancel={handlePointerUp}
-      >
-        {board.flatMap((row, rowIndex) =>
-          row.map((cellData, colIndex) => (
-            <Cell
-              key={`${rowIndex}-${colIndex}`}
-              ref={(el) => (cellRefs.current[rowIndex * 9 + colIndex] = el)}
-              row={rowIndex}
-              col={colIndex}
-              cellData={cellData}
-              isValid={!invalidCells.has(`${rowIndex}-${colIndex}`)}
-              onChange={(e) => handleCellChange(rowIndex, colIndex, e.target.value)}
-              onKeyDown={(e) => handleKeyDown(e, rowIndex, colIndex)}
-              onPointerDown={() => handlePointerDown(rowIndex, colIndex)}
-              onPointerEnter={() => handlePointerEnter(rowIndex, colIndex)}
-            />
-          )),
-        )}
-      </div>
-      <StatusBar status={status} isCalculating={isCalculating} />
-      <div className="flex mt-4 space-x-2">
-        <button
-          className={`px-4 py-2 rounded ${
-            mode === 'normal'
-              ? 'bg-blue-500 text-white dark:bg-blue-800'
-              : 'bg-gray-200 dark:bg-gray-700'
-          }`}
-          onClick={() => setMode('normal')}
-        >
-          Normal
-        </button>
-        <button
-          className={`px-4 py-2 rounded ${
-            mode === 'corner'
-              ? 'bg-blue-500 text-white dark:bg-blue-800'
-              : 'bg-gray-200 dark:bg-gray-700'
-          }`}
-          onClick={() => setMode('corner')}
-        >
-          Corner
-        </button>
-        <button
-          className={`px-4 py-2 rounded ${
-            mode === 'center'
-              ? 'bg-blue-500 text-white dark:bg-blue-800'
-              : 'bg-gray-200 dark:bg-gray-700'
-          }`}
-          onClick={() => setMode('center')}
-        >
-          Center
-        </button>
-      </div>
+      <Board
+        board={board}
+        invalidCells={invalidCells}
+        cellRefs={cellRefs}
+        handleCellChange={handleCellChange}
+        handleKeyDown={handleKeyDown}
+        handlePointerDown={handlePointerDown}
+        handlePointerEnter={handlePointerEnter}
+        handlePointerUp={handlePointerUp}
+      />
+      <SolutionStatus status={status} isCalculating={isCalculating} />
+      <ControlPanel mode={mode} setMode={setMode} />
     </div>
   )
 }
