@@ -1,4 +1,4 @@
-/* src/components/Board.jsx */
+// src/components/Board.jsx
 import React from 'react'
 import Cell from './Cell'
 
@@ -18,7 +18,7 @@ const Board = ({
       onPointerUp={handlePointerUp}
       onPointerCancel={handlePointerUp}
     >
-      {board.flatMap((row, rowIndex) =>
+      {board.cells.map((row, rowIndex) =>
         row.map((cellData, colIndex) => (
           <Cell
             key={`${rowIndex}-${colIndex}`}

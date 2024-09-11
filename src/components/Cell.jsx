@@ -1,4 +1,4 @@
-/* src/components/Cell.jsx */
+// src/components/Cell.jsx
 import { forwardRef } from 'react'
 
 const colorClasses = {
@@ -46,14 +46,14 @@ const Cell = forwardRef(
     return (
       <div
         className={`
-      group
-      w-full h-full aspect-square relative
-      border-r border-b border-gray-300 dark:border-gray-600
-      ${col % 3 === 2 ? 'border-r-2 border-r-black dark:border-r-white' : ''}
-      ${row % 3 === 2 ? 'border-b-2 border-b-black dark:border-b-white' : ''}
-      ${col === 0 ? 'border-l-2 border-l-black dark:border-l-white' : ''}
-      ${row === 0 ? 'border-t-2 border-t-black dark:border-t-white' : ''}
-    `}
+          group
+          w-full h-full aspect-square relative
+          border-r border-b border-gray-300 dark:border-gray-600
+          ${col % 3 === 2 ? 'border-r-2 border-r-black dark:border-r-white' : ''}
+          ${row % 3 === 2 ? 'border-b-2 border-b-black dark:border-b-white' : ''}
+          ${col === 0 ? 'border-l-2 border-l-black dark:border-l-white' : ''}
+          ${row === 0 ? 'border-t-2 border-t-black dark:border-t-white' : ''}
+        `}
         onPointerDown={onPointerDown}
         onPointerEnter={onPointerEnter}
         style={{ touchAction: 'none' }}
@@ -62,16 +62,16 @@ const Cell = forwardRef(
           ref={ref}
           aria-label={`Row ${row + 1}, Column ${col + 1}`}
           className={`
-        w-full h-full
-        flex justify-center items-center
-        text-[3vmin] font-bold text-center
-        p-0 box-border
-        ${colorClasses[color] || 'bg-white dark:bg-gray-800'}
-        ${!isValid ? 'ring-2 ring-rose-500 text-rose-700 dark:ring-rose-700 dark:text-rose-500' : ''}
-        ${color === 'white' ? 'text-gray-800 dark:text-white' : 'text-white dark:text-gray-800'}
-        group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
-        focus:outline-none
-      `}
+            w-full h-full
+            flex justify-center items-center
+            text-[3vmin] font-bold text-center
+            p-0 box-border
+            ${colorClasses[color] || 'bg-white dark:bg-gray-800'}
+            ${!isValid ? 'ring-2 ring-rose-500 text-rose-700 dark:ring-rose-700 dark:text-rose-500' : ''}
+            ${color === 'white' ? 'text-gray-800 dark:text-white' : 'text-white dark:text-gray-800'}
+            group-[.focused]:ring-2 group-[.focused]:ring-blue-500 dark:group-[.focused]:ring-blue-300
+            focus:outline-none
+          `}
           value={value || ''}
           onChange={onChange}
           onKeyDown={onKeyDown}
