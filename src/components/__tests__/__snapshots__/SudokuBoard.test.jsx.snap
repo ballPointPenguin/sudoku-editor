@@ -6,7 +6,21 @@ exports[`SudokuBoard > matches snapshot 1`] = `
     class="flex flex-col items-center justify-center w-full h-full p-4 sm:p-8"
   >
     <div
-      class="flex flex-wrap gap-2 p-2 bg-gray-100 rounded-lg dark:bg-gray-900"
+      class="flex justify-between w-full mb-4"
+    >
+      <h1
+        class="text-2xl font-bold"
+      >
+        Bennie's Board Builder
+      </h1>
+      <button
+        class="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600"
+      >
+        Rules
+      </button>
+    </div>
+    <div
+      class="flex flex-wrap p-2 bg-gray-100 rounded-lg gap-2 dark:bg-gray-900"
     >
       <button
         aria-label="Select red color"
@@ -4876,16 +4890,187 @@ exports[`SudokuBoard > matches snapshot 1`] = `
         class="flex flex-wrap gap-2"
       >
         <button
-          class="px-3 py-1 rounded bg-gray-200 text-gray-800 dark:bg-gray-600 dark:text-gray-200"
+          class="px-3 py-1 rounded flex items-center bg-gray-200 text-gray-800 dark:bg-gray-600 dark:text-gray-200"
         >
           Diagonal +
+          <svg
+            class="lucide lucide-info ml-1 cursor-help"
+            fill="none"
+            height="16"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+            />
+            <path
+              d="M12 16v-4"
+            />
+            <path
+              d="M12 8h.01"
+            />
+          </svg>
         </button>
         <button
-          class="px-3 py-1 rounded bg-gray-200 text-gray-800 dark:bg-gray-600 dark:text-gray-200"
+          class="px-3 py-1 rounded flex items-center bg-gray-200 text-gray-800 dark:bg-gray-600 dark:text-gray-200"
         >
           Diagonal -
+          <svg
+            class="lucide lucide-info ml-1 cursor-help"
+            fill="none"
+            height="16"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+            />
+            <path
+              d="M12 16v-4"
+            />
+            <path
+              d="M12 8h.01"
+            />
+          </svg>
+        </button>
+        <button
+          class="px-3 py-1 rounded flex items-center bg-gray-200 text-gray-800 dark:bg-gray-600 dark:text-gray-200"
+        >
+          Anti-Knight
+          <svg
+            class="lucide lucide-info ml-1 cursor-help"
+            fill="none"
+            height="16"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+            />
+            <path
+              d="M12 16v-4"
+            />
+            <path
+              d="M12 8h.01"
+            />
+          </svg>
+        </button>
+        <button
+          class="px-3 py-1 rounded flex items-center bg-gray-200 text-gray-800 dark:bg-gray-600 dark:text-gray-200"
+        >
+          Anti-King
+          <svg
+            class="lucide lucide-info ml-1 cursor-help"
+            fill="none"
+            height="16"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+            />
+            <path
+              d="M12 16v-4"
+            />
+            <path
+              d="M12 8h.01"
+            />
+          </svg>
+        </button>
+        <button
+          class="px-3 py-1 rounded flex items-center bg-gray-200 text-gray-800 dark:bg-gray-600 dark:text-gray-200"
+        >
+          Disjoint Groups
+          <svg
+            class="lucide lucide-info ml-1 cursor-help"
+            fill="none"
+            height="16"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+            />
+            <path
+              d="M12 16v-4"
+            />
+            <path
+              d="M12 8h.01"
+            />
+          </svg>
+        </button>
+        <button
+          class="px-3 py-1 rounded flex items-center bg-gray-200 text-gray-800 dark:bg-gray-600 dark:text-gray-200"
+        >
+          Non-Consecutive
+          <svg
+            class="lucide lucide-info ml-1 cursor-help"
+            fill="none"
+            height="16"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+            />
+            <path
+              d="M12 16v-4"
+            />
+            <path
+              d="M12 8h.01"
+            />
+          </svg>
         </button>
       </div>
+    </div>
+    <div
+      class="bg-gray-100 dark:bg-gray-700 mt-4 p-4 rounded-lg w-full min-h-[6em] font-serif"
+    >
+      <p
+        class="text-sm"
+      />
     </div>
   </div>
 </DocumentFragment>

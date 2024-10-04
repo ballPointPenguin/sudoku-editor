@@ -37,7 +37,7 @@ const Cell = forwardRef(
 
     const renderCenterDigits = () => {
       return (
-        <div className="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none">
+        <div className="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none">
           <span className="text-center">{centerDigits.join('')}</span>
         </div>
       )

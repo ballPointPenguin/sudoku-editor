@@ -9,7 +9,7 @@ const ControlPanel = ({ mode, setMode }) => {
   ]
 
   return (
-    <div className="flex mt-4 space-x-2">
+    <div className="flex space-x-2 mt-4">
       {buttons.map(({ label, value }) => (
         <button
           key={value}

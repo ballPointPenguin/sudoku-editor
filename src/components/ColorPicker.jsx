@@ -17,7 +17,7 @@ const colorOptions = [
 
 const ColorPicker = ({ selectedColor, onColorSelect }) => {
   return (
-    <div className="flex flex-wrap gap-2 p-2 bg-gray-100 rounded-lg dark:bg-gray-900">
+    <div className="flex flex-wrap gap-2 bg-gray-100 dark:bg-gray-900 p-2 rounded-lg">
       {colorOptions.map((color) => (
         <button
           key={color.name}

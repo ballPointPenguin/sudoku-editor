@@ -202,12 +202,12 @@ const SudokuBoard = () => {
   }, [])
 
   return (
-    <div className="flex flex-col items-center justify-center w-full h-full p-4 sm:p-8">
-      <div className="flex justify-between w-full mb-4">
-        <h1 className="text-2xl font-bold">Bennie&apos;s Board Builder</h1>
+    <div className="flex flex-col justify-center items-center p-4 sm:p-8 w-full h-full">
+      <div className="flex justify-between mb-4 w-full">
+        <h1 className="font-bold text-2xl">Bennie&apos;s Board Builder</h1>
         <button
           onClick={() => setIsRulesModalOpen(true)}
-          className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600"
+          className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded text-white"
         >
           Rules
         </button>

@@ -40,8 +40,8 @@ const ConstraintPanel = ({ constraints, toggleConstraint, setInfoText }) => {
   )
 
   return (
-    <div className="p-4 mt-4 bg-gray-100 rounded-lg dark:bg-gray-700">
-      <h3 className="mb-2 text-lg font-semibold">Constraints</h3>
+    <div className="bg-gray-100 dark:bg-gray-700 mt-4 p-4 rounded-lg">
+      <h3 className="mb-2 font-semibold text-lg">Constraints</h3>
       <div className="flex flex-wrap gap-2">
         {renderConstraintButton('positiveDiagonal', 'Diagonal +')}
         {renderConstraintButton('negativeDiagonal', 'Diagonal -')}
