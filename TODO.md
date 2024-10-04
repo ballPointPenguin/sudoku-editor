@@ -22,10 +22,10 @@
 - [ ] Constraints:
   - [x] Diagonal +
   - [x] Diagonal -
-  - [ ] Anti-Knight
-  - [ ] Anti-King
-  - [ ] Disjoint Groups
-  - [ ] Nonconsecutive
+  - [x] Anti-Knight
+  - [x] Anti-King
+  - [x] Disjoint Groups
+  - [x] Nonconsecutive
 - [ ] Features:
   - [ ] Given Digit (?)
   - [ ] Regions
@@ -72,6 +72,7 @@
     - [ ] Color
   - [ ] Cage:
     - [ ] Colors (outline, text)
+- [ ] Local Storage
 - [ ] Colorblind Mode(s)
 - [ ] Undo (Ctrl/Cmd+Z)
 - [ ] Notes

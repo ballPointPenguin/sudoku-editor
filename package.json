@@ -6,12 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "start": "vite preview",
+    "start": "vite",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest",
     "test:update": "vitest --update",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "verify": "eslint . && vitest --run && prettier --check . && vite build"
   },
   "dependencies": {
     "lucide-react": "^0.447.0",
