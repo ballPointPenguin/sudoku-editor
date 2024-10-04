@@ -7,10 +7,13 @@ import ConstraintPanel from './ConstraintPanel'
 import ControlPanel from './ControlPanel'
 import SolutionStatus from './SolutionStatus'
 import InfoBox from './InfoBox'
-import SudokuRulesModal from './SudokuRulesModal'
+import { saveState, loadState } from '../utils/storageUtils'
 
 const SudokuBoard = () => {
-  const [board, setBoard] = useState(new Board())
+  const [board, setBoard] = useState(() => {
+    const savedState = loadState()
+    return savedState ? new Board(9, savedState.cells) : new Board(9)
+  })
   const [invalidCells, setInvalidCells] = useState(new Set())
   const [isCalculating, setIsCalculating] = useState(false)
   const [isColoring, setIsColoring] = useState(false)
@@ -18,15 +21,19 @@ const SudokuBoard = () => {
   const [selectedColor, setSelectedColor] = useState('white')
   const [status, setStatus] = useState('Initializing...')
   const [infoText, setInfoText] = useState('')
-  const [isRulesModalOpen, setIsRulesModalOpen] = useState(false)
 
-  const [constraints, setConstraints] = useState({
-    positiveDiagonal: false,
-    negativeDiagonal: false,
-    antiKnight: false,
-    antiKing: false,
-    disjointGroups: false,
-    nonConsecutive: false,
+  const [constraints, setConstraints] = useState(() => {
+    const savedState = loadState()
+    return savedState
+      ? savedState.constraints
+      : {
+          positiveDiagonal: false,
+          negativeDiagonal: false,
+          antiKnight: false,
+          antiKing: false,
+          disjointGroups: false,
+          nonConsecutive: false,
+        }
   })
 
   const cellRefs = useRef([])
@@ -201,17 +208,16 @@ const SudokuBoard = () => {
     }
   }, [])
 
+  useEffect(() => {
+    // Save state whenever board or constraints change
+    saveState({
+      cells: board.toJSON(),
+      constraints,
+    })
+  }, [board, constraints])
+
   return (
     <div className="flex flex-col justify-center items-center p-4 sm:p-8 w-full h-full">
-      <div className="flex justify-between mb-4 w-full">
-        <h1 className="font-bold text-2xl">Bennie&apos;s Board Builder</h1>
-        <button
-          onClick={() => setIsRulesModalOpen(true)}
-          className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded text-white"
-        >
-          Rules
-        </button>
-      </div>
       <ColorPicker selectedColor={selectedColor} onColorSelect={setSelectedColor} />
       <BoardComponent
         board={board}
@@ -232,7 +238,6 @@ const SudokuBoard = () => {
         setInfoText={setInfoText}
       />
       <InfoBox text={infoText} />
-      <SudokuRulesModal isOpen={isRulesModalOpen} onClose={() => setIsRulesModalOpen(false)} />
     </div>
   )
 }

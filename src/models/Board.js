@@ -2,15 +2,25 @@
 import { Cell } from './Cell'
 
 export class Board {
-  constructor(size = 9) {
+  constructor(size = 9, initialState = null) {
     this.size = size
-    this.cells = Array(size)
-      .fill()
-      .map(() =>
-        Array(size)
-          .fill()
-          .map(() => new Cell()),
+
+    if (initialState) {
+      this.cells = initialState.map((row) =>
+        row.map(
+          (cellData) =>
+            new Cell(cellData.value, cellData.color, cellData.cornerDigits, cellData.centerDigits),
+        ),
       )
+    } else {
+      this.cells = Array(size)
+        .fill()
+        .map(() =>
+          Array(size)
+            .fill()
+            .map(() => new Cell()),
+        )
+    }
   }
 
   clone() {

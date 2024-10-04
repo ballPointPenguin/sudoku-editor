@@ -3,24 +3,10 @@
 exports[`SudokuBoard > matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="flex flex-col items-center justify-center w-full h-full p-4 sm:p-8"
+    class="flex flex-col justify-center items-center p-4 sm:p-8 w-full h-full"
   >
     <div
-      class="flex justify-between w-full mb-4"
-    >
-      <h1
-        class="text-2xl font-bold"
-      >
-        Bennie's Board Builder
-      </h1>
-      <button
-        class="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600"
-      >
-        Rules
-      </button>
-    </div>
-    <div
-      class="flex flex-wrap p-2 bg-gray-100 rounded-lg gap-2 dark:bg-gray-900"
+      class="flex flex-wrap gap-2 bg-gray-100 dark:bg-gray-900 p-2 rounded-lg"
     >
       <button
         aria-label="Select red color"
@@ -72,7 +58,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
       />
     </div>
     <div
-      class="grid grid-cols-9 grid-rows-9 gap-0 w-full h-full max-w-[80vmin] max-h-[80vmin] aspect-square relative"
+      class="relative gap-0 grid grid-cols-9 grid-rows-9 w-full max-w-[80vmin] h-full max-h-[80vmin] aspect-square"
     >
       <div
         class="
@@ -126,7 +112,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -185,7 +171,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -244,7 +230,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -303,7 +289,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -362,7 +348,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -421,7 +407,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -480,7 +466,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -539,7 +525,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -598,7 +584,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -657,7 +643,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -716,7 +702,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -775,7 +761,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -834,7 +820,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -893,7 +879,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -952,7 +938,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -1011,7 +997,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -1070,7 +1056,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -1129,7 +1115,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -1188,7 +1174,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -1247,7 +1233,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -1306,7 +1292,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -1365,7 +1351,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -1424,7 +1410,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -1483,7 +1469,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -1542,7 +1528,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -1601,7 +1587,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -1660,7 +1646,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -1719,7 +1705,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -1778,7 +1764,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -1837,7 +1823,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -1896,7 +1882,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -1955,7 +1941,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -2014,7 +2000,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -2073,7 +2059,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -2132,7 +2118,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -2191,7 +2177,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -2250,7 +2236,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -2309,7 +2295,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -2368,7 +2354,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -2427,7 +2413,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -2486,7 +2472,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -2545,7 +2531,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -2604,7 +2590,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -2663,7 +2649,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -2722,7 +2708,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -2781,7 +2767,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -2840,7 +2826,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -2899,7 +2885,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -2958,7 +2944,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -3017,7 +3003,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -3076,7 +3062,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -3135,7 +3121,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -3194,7 +3180,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -3253,7 +3239,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -3312,7 +3298,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -3371,7 +3357,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -3430,7 +3416,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -3489,7 +3475,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -3548,7 +3534,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -3607,7 +3593,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -3666,7 +3652,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -3725,7 +3711,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -3784,7 +3770,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -3843,7 +3829,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -3902,7 +3888,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -3961,7 +3947,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -4020,7 +4006,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -4079,7 +4065,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -4138,7 +4124,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -4197,7 +4183,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -4256,7 +4242,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -4315,7 +4301,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -4374,7 +4360,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -4433,7 +4419,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -4492,7 +4478,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -4551,7 +4537,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -4610,7 +4596,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -4669,7 +4655,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -4728,7 +4714,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -4787,7 +4773,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -4846,7 +4832,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="absolute inset-0 flex items-center justify-center text-[1.5vmin] pointer-events-none"
+          class="absolute inset-0 flex justify-center items-center text-[1.5vmin] pointer-events-none"
         >
           <span
             class="text-center"
@@ -4860,7 +4846,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
       Initializing...
     </div>
     <div
-      class="flex mt-4 space-x-2"
+      class="flex space-x-2 mt-4"
     >
       <button
         class="px-4 py-2 rounded bg-blue-500 text-white dark:bg-blue-800"
@@ -4879,10 +4865,10 @@ exports[`SudokuBoard > matches snapshot 1`] = `
       </button>
     </div>
     <div
-      class="p-4 mt-4 bg-gray-100 rounded-lg dark:bg-gray-700"
+      class="bg-gray-100 dark:bg-gray-700 mt-4 p-4 rounded-lg"
     >
       <h3
-        class="mb-2 text-lg font-semibold"
+        class="mb-2 font-semibold text-lg"
       >
         Constraints
       </h3>
