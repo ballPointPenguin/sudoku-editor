@@ -19,24 +19,9 @@
   - [x] Add unit tests for utility functions and new classes.
 - [x] Unit Tests
 - [x] Integration Tests
-- [ ] Colorblind Mode(s)
-- [ ] Undo (Ctrl/Cmd+Z)
-- [ ] Notes
-- [ ] Rotate
-- [ ] Flip
-- [ ] Mirror
-- [ ] Reset
-- [ ] a11y / aria
-- [ ] Export
-- [ ] Import
-- [ ] LongURL
-- [ ] ShortURL
-- [ ] E2E Tests
-- [ ] Randomize (with constraints)
-- [ ] Performance-aware worker values
 - [ ] Constraints:
-  - [ ] Diagonal +
-  - [ ] Diagonal -
+  - [x] Diagonal +
+  - [x] Diagonal -
   - [ ] Anti-Knight
   - [ ] Anti-King
   - [ ] Disjoint Groups
@@ -87,6 +72,21 @@
     - [ ] Color
   - [ ] Cage:
     - [ ] Colors (outline, text)
+- [ ] Colorblind Mode(s)
+- [ ] Undo (Ctrl/Cmd+Z)
+- [ ] Notes
+- [ ] Rotate
+- [ ] Flip
+- [ ] Mirror
+- [ ] Reset
+- [ ] a11y / aria
+- [ ] Export
+- [ ] Import
+- [ ] LongURL
+- [ ] ShortURL
+- [ ] E2E Tests
+- [ ] Randomize (with constraints)
+- [ ] Performance-aware worker values
 - [ ] Language:
   - [ ] English
   - [ ] Chinese (simplified)
