@@ -58,7 +58,7 @@ exports[`SudokuBoard > matches snapshot 1`] = `
       />
     </div>
     <div
-      class="grid grid-cols-9 grid-rows-9 gap-0 w-full h-full max-w-[80vmin] max-h-[80vmin] aspect-square"
+      class="grid grid-cols-9 grid-rows-9 gap-0 w-full h-full max-w-[80vmin] max-h-[80vmin] aspect-square relative"
     >
       <div
         class="
@@ -4863,6 +4863,29 @@ exports[`SudokuBoard > matches snapshot 1`] = `
       >
         Center
       </button>
+    </div>
+    <div
+      class="p-4 mt-4 bg-gray-100 rounded-lg dark:bg-gray-700"
+    >
+      <h3
+        class="mb-2 text-lg font-semibold"
+      >
+        Constraints
+      </h3>
+      <div
+        class="flex flex-wrap gap-2"
+      >
+        <button
+          class="px-3 py-1 rounded bg-gray-200 text-gray-800 dark:bg-gray-600 dark:text-gray-200"
+        >
+          Diagonal +
+        </button>
+        <button
+          class="px-3 py-1 rounded bg-gray-200 text-gray-800 dark:bg-gray-600 dark:text-gray-200"
+        >
+          Diagonal -
+        </button>
+      </div>
     </div>
   </div>
 </DocumentFragment>
