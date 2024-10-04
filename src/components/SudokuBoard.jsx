@@ -3,6 +3,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { Board } from '../models/Board'
 import BoardComponent from './Board'
 import ColorPicker from './ColorPicker'
+import ConstraintPanel from './ConstraintPanel'
 import ControlPanel from './ControlPanel'
 import SolutionStatus from './SolutionStatus'
 
@@ -14,6 +15,12 @@ const SudokuBoard = () => {
   const [mode, setMode] = useState('normal') // 'normal' or 'corner' or 'center'
   const [selectedColor, setSelectedColor] = useState('white')
   const [status, setStatus] = useState('Initializing...')
+
+  const [constraints, setConstraints] = useState({
+    positiveDiagonal: false,
+    negativeDiagonal: false,
+  })
+
   const cellRefs = useRef([])
   const timerRef = useRef(null)
   const workerRef = useRef(null)
@@ -123,6 +130,13 @@ const SudokuBoard = () => {
     [board, mode, handleCellChange, moveFocus],
   )
 
+  const toggleConstraint = useCallback((constraintName) => {
+    setConstraints((prev) => ({
+      ...prev,
+      [constraintName]: !prev[constraintName],
+    }))
+  }, [])
+
   useEffect(() => {
     // Initialize the worker
     workerRef.current = new Worker('sudokuWorker.js')
@@ -167,7 +181,7 @@ const SudokuBoard = () => {
         clearTimeout(timerRef.current)
       }
     }
-  }, [board])
+  }, [board, constraints])
 
   useEffect(() => {
     const handleGlobalPointerUp = () => setIsColoring(false)
@@ -191,9 +205,11 @@ const SudokuBoard = () => {
         handlePointerDown={handlePointerDown}
         handlePointerEnter={handlePointerEnter}
         handlePointerUp={handlePointerUp}
+        constraints={constraints}
       />
       <SolutionStatus status={status} isCalculating={isCalculating} />
       <ControlPanel mode={mode} setMode={setMode} />
+      <ConstraintPanel constraints={constraints} toggleConstraint={toggleConstraint} />
     </div>
   )
 }

@@ -73,6 +73,26 @@ export class Board {
       }
     }
 
+    // Check diagonal constraints
+    if (row === col && !this.isValidPositiveDiagonal(row, col, num)) return false
+    if (row + col === this.size - 1 && !this.isValidNegativeDiagonal(row, col, num)) return false
+
+    return true
+  }
+
+  isValidPositiveDiagonal(row, col, num) {
+    for (let i = 0; i < this.size; i++) {
+      if (i !== row && this.cells[i][i].value === num) return false
+    }
+
+    return true
+  }
+
+  isValidNegativeDiagonal(row, col, num) {
+    for (let i = 0; i < this.size; i++) {
+      if (i !== row && this.cells[i][this.size - 1 - i].value === num) return false
+    }
+
     return true
   }
 
