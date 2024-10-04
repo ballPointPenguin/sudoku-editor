@@ -6,6 +6,8 @@ import ColorPicker from './ColorPicker'
 import ConstraintPanel from './ConstraintPanel'
 import ControlPanel from './ControlPanel'
 import SolutionStatus from './SolutionStatus'
+import InfoBox from './InfoBox'
+import SudokuRulesModal from './SudokuRulesModal'
 
 const SudokuBoard = () => {
   const [board, setBoard] = useState(new Board())
@@ -15,10 +17,16 @@ const SudokuBoard = () => {
   const [mode, setMode] = useState('normal') // 'normal' or 'corner' or 'center'
   const [selectedColor, setSelectedColor] = useState('white')
   const [status, setStatus] = useState('Initializing...')
+  const [infoText, setInfoText] = useState('')
+  const [isRulesModalOpen, setIsRulesModalOpen] = useState(false)
 
   const [constraints, setConstraints] = useState({
     positiveDiagonal: false,
     negativeDiagonal: false,
+    antiKnight: false,
+    antiKing: false,
+    disjointGroups: false,
+    nonConsecutive: false,
   })
 
   const cellRefs = useRef([])
@@ -195,6 +203,15 @@ const SudokuBoard = () => {
 
   return (
     <div className="flex flex-col items-center justify-center w-full h-full p-4 sm:p-8">
+      <div className="flex justify-between w-full mb-4">
+        <h1 className="text-2xl font-bold">Bennie&apos;s Board Builder</h1>
+        <button
+          onClick={() => setIsRulesModalOpen(true)}
+          className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600"
+        >
+          Rules
+        </button>
+      </div>
       <ColorPicker selectedColor={selectedColor} onColorSelect={setSelectedColor} />
       <BoardComponent
         board={board}
@@ -209,7 +226,13 @@ const SudokuBoard = () => {
       />
       <SolutionStatus status={status} isCalculating={isCalculating} />
       <ControlPanel mode={mode} setMode={setMode} />
-      <ConstraintPanel constraints={constraints} toggleConstraint={toggleConstraint} />
+      <ConstraintPanel
+        constraints={constraints}
+        toggleConstraint={toggleConstraint}
+        setInfoText={setInfoText}
+      />
+      <InfoBox text={infoText} />
+      <SudokuRulesModal isOpen={isRulesModalOpen} onClose={() => setIsRulesModalOpen(false)} />
     </div>
   )
 }

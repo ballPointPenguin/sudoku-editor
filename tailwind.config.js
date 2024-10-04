@@ -5,6 +5,9 @@ export default {
   darkMode: 'class', // This enables dark mode
   theme: {
     extend: {
+      fontFamily: {
+        serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+      },
       transitionDuration: {
         250: '250ms',
       },
